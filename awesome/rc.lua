@@ -9,6 +9,7 @@
 
 -- If LuaRocks is installed, make sure that packages installed through it are
 -- found (e.g. lgi). If LuaRocks is not installed, do nothing.
+require("volume")
 pcall(require, "luarocks.loader")
 
 local gears         = require("gears")
@@ -844,8 +845,8 @@ end
 --]]
 awful.spawn.with_shell("prime-run picom -bcCGfF -o 0.38 -O 200 -I 200 -t 0 -l 0 -r 3 -D2 -m 0.88 --config /dev/null &")
 awful.spawn.with_shell("pa-applet")
-
-
+awful.spawn.with_shell("flameshot")
+--[[
 -- Volume Widget
 myVolume = wibox.widget {
     text   = "󰕾",
@@ -873,4 +874,4 @@ local myVolume_tooltip = awful.tooltip
             awful.spawn.easy_async_with_shell("wpctl set-volume @DEFAULT_AUDIO_SINK@ 10%-")
         end
     end)
-
+]]--
