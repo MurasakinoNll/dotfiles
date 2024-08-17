@@ -11,7 +11,7 @@
 -- found (e.g. lgi). If LuaRocks is not installed, do nothing.
 require("volume")
 pcall(require, "luarocks.loader")
-
+local volume_control = require("volume-control")
 local gears         = require("gears")
 local awful         = require("awful")
                       require("awful.autofocus")
@@ -25,6 +25,7 @@ local hotkeys_popup = require("awful.hotkeys_popup")
                       require("awful.hotkeys_popup.keys")
 local mytable       = awful.util.table or gears.table -- 4.{0,1} compatibility
 
+volumecfg = volume_control({})
 -- }}}
 
 -- {{{ Error handling
@@ -653,6 +654,10 @@ for i = 1, 9 do
                   end,
                   {description = "move focused client to tag #"..i, group = "tag"}),
         -- Toggle tag on focused client.
+        awful.key({}, "XF86AudioRaiseVolume", function() volumecfg:up() end),
+        awful.key({}, "XF86AudioLowerVolume", function() volumecfg:down() end),
+        awful.key({}, "XF86AudioMuteVolume", function() volumecfg:toggle() end),
+        
         awful.key({ modkey, "Control", "Shift" }, "#" .. i + 9,
                   function ()
                       if client.focus then

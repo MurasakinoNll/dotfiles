@@ -436,7 +436,8 @@ function theme.at_screen_connect(s)
             layout = wibox.layout.fixed.horizontal,
             wibox.widget.systray(),
             wibox.container.margin(scissors, dpi(4), dpi(8)),
-            --[[ using shapes
+            pl(volumecfg.widget, "#7C3460", dpi(0)),
+      --[[ using shapes
             pl(wibox.widget { mpdicon, theme.mpd.widget, layout = wibox.layout.align.horizontal }, "#343434"),
             pl(task, "#343434"),
             --pl(wibox.widget { mailicon, mail and theme.mail.widget, layout = wibox.layout.align.horizontal }, "#343434"),
