@@ -1,3 +1,6 @@
 [submodule "awesome/volume-control"]
 	path = awesome/volume-control
 	url = https://github.com/deficient/volume-control
+[submodule "nvim"]
+	path = nvim
+	url = https://github.com/LazyVim/LazyVim
