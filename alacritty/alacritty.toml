@@ -26,8 +26,8 @@ white = "#F8F8F2"
 yellow = "#da8548"
 
 [colors.primary]
-background = "#42395b"  
-foreground = "#C2FFF0"
+background = "#3d3d3d"  
+foreground = "#cccccc"
 
 [colors.selection]
 background = "#3e4451"
@@ -40,19 +40,19 @@ TERM = "xterm-256color"
 size = 9.0
 
 [font.bold]
-family = "Source Code Pro"
+family = "JetBrains Mono Nerd Font"
 style = "Bold"
-
+#:%s/foo/spam/g
 [font.bold_italic]
-family = "Source Code Pro"
+family = "JetBrains Mono Nerd Font"
 style = "Bold Italic"
 
 [font.italic]
-family = "Source Code Pro"
+family = "JetBrains Mono Nerd Font"
 style = "Italic"
 
 [font.normal]
-family = "Source Code Pro"
+family = "JetBrains Mono Nerd Font"
 style = "Regular"
 
 [font.offset]

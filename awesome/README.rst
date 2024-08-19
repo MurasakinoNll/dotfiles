@@ -163,7 +163,7 @@ Additional default software used: ::
 .. _Awesome: http://github.com/awesomeWM/awesome
 .. _branches: https://github.com/lcpz/awesome-copycats/branches
 .. _lucamanni: https://github.com/lucamanni/awesome
-.. _romockee: https://github.com/romockee/powerarrow
+.. _romockee: https://github.com/romockee/haraksbase
 .. _ok100: http://ok100.deviantart.com/art/DWM-January-2013-348656846
 .. _amouly: https://bbs.archlinux.org/viewtopic.php?pid=1307158#p1307158
 .. _swordfischer: https://github.com/lcpz/awesome-copycats/issues/53
