@@ -26,8 +26,8 @@ white = "#F8F8F2"
 yellow = "#da8548"
 
 [colors.primary]
-background = "#3d3d3d"  
-foreground = "#cccccc"
+background = "#282840"
+foreground = "#ac6dc7"
 
 [colors.selection]
 background = "#3e4451"
