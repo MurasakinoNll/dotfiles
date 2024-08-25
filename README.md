@@ -6,6 +6,6 @@
   
 ```mkdir ~/tmp```
 ```git clone https://github.com/MurasakinoNll/dotfiles ~/tmp --recursive```
-```sudo cp -r ~/tmp/* ~/.config```
+```sudo cp -rRT ~/tmp/* ~/.config```
 ```sudo mv ~/.bashrc ~/.bashrc.old```
 ```sudo mv ~/.config/.bashrc ~/.bashrc```
