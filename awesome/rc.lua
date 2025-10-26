@@ -89,26 +89,21 @@ awful.spawn.with_shell(
 
 -- {{{ Variable definitions
 
-local themes = {--[[
-    "blackburn",       -- 1
-    "copland",         -- 2
-    "dremora",         -- 3
-    "holo",            -- 4
-    "multicolor",]] -- 5
+local themes = {
 	"haraksbase",
+	"ds",
 	"redscale",
-	--[[
-    "haraksbase-dark", -- 7
-    "rainbow",         -- 8
-    "steamburn",       -- 9
-    "vertex"]]
-	-- 10
 }
 
-local chosen_theme = themes[1]
+local chosen_theme = themes[2]
 local modkey = "Mod4"
 local altkey = "Mod1"
-local terminal = "alacritty"
+local terminal
+if chosen_theme == themes[1] then
+	terminal = "alacritty --config-file /home/haraku/.config/alacritty/alacritty1.toml"
+elseif chosen_theme == themes[2] then
+	terminal = "alacritty --config-file /home/haraku/.config/alacritty/alacritty2.toml"
+end
 local vi_focus = false -- vi-like client focus https://github.com/lcpz/awesome-copycats/issues/275
 local cycle_prev = true -- cycle with only the previously focused client or all https://github.com/lcpz/awesome-copycats/issues/274
 local editor = os.getenv("EDITOR") or "nvim"
@@ -147,7 +142,7 @@ lain.layout.termfair.center.nmaster = 3
 lain.layout.termfair.center.ncol = 1
 lain.layout.cascade.tile.offset_x = 2
 lain.layout.cascade.tile.offset_y = 32
-lain.layout.cascade.tile.extra_padding = 5
+lain.layout.cascade.tile.extra_padding = 0
 lain.layout.cascade.tile.nmaster = 5
 lain.layout.cascade.tile.ncol = 2
 

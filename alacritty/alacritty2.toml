@@ -1,0 +1,157 @@
+[colors]
+draw_bold_text_with_bright_colors = true
+
+[colors.bright]
+black = "#4d5d57"   # foggy forest bark
+red = "#ff7e3b"     # flame orange
+green = "#7bdcb5"   # bright seafoam highlight
+yellow = "#fcd16b"  # intense fire glow
+blue = "#8ad4e4"    # bright underwater light shafts
+magenta = "#b394b9" # mystical depth accent
+cyan = "#9df2ea"    # glowing cyan shimmer
+white = "#f0f9f7"   # pale ocean mist
+
+[colors.normal]
+black = "#1f2e29"   # ocean floor depth
+red = "#d0502a"     # ember red
+green = "#4e8e78"   # murky kelp
+yellow = "#d1ae5b"  # fire shadows
+blue = "#396b78"    # deep sea teal
+magenta = "#645a72" # somber shadows
+cyan = "#54a6a1"    # neutral aqua
+white = "#c9d7d3"   # softened light
+
+[colors.primary]
+background = "#172624" # very deep ocean green
+foreground = "#c0e9e6" # ethereal light for text
+
+[colors.cursor]
+cursor = "#ffb46a"      # flame cursor
+text = "CellBackground"
+
+[colors.selection]
+background = "#2a3f3a"  # deep water shadow
+text = "CellForeground"
+[env]
+TERM = "xterm-256color"
+
+[font]
+size = 11.0
+
+[font.bold]
+family = "JetBrains Mono Nerd Font"
+style = "Bold"
+#:%s/foo/spam/g
+[font.bold_italic]
+family = "JetBrains Mono Nerd Font"
+style = "Bold Italic"
+
+[font.italic]
+family = "JetBrains Mono Nerd Font"
+style = "Italic"
+
+[font.normal]
+family = "JetBrains Mono Nerd Font"
+style = "Regular"
+
+[font.offset]
+x = 0
+y = 1
+
+[[keyboard.bindings]]
+action = "Paste"
+key = "V"
+mods = "Control|Shift"
+
+[[keyboard.bindings]]
+action = "Copy"
+key = "C"
+mods = "Control|Shift"
+
+[[keyboard.bindings]]
+action = "PasteSelection"
+key = "Insert"
+mods = "Shift"
+
+[[keyboard.bindings]]
+action = "ResetFontSize"
+key = "Key0"
+mods = "Control"
+
+[[keyboard.bindings]]
+action = "IncreaseFontSize"
+key = "Equals"
+mods = "Control"
+
+[[keyboard.bindings]]
+action = "IncreaseFontSize"
+key = "Plus"
+mods = "Control"
+
+[[keyboard.bindings]]
+action = "DecreaseFontSize"
+key = "Minus"
+mods = "Control"
+
+[[keyboard.bindings]]
+action = "ToggleFullscreen"
+key = "F11"
+mods = "None"
+
+[[keyboard.bindings]]
+action = "Paste"
+key = "Paste"
+mods = "None"
+
+[[keyboard.bindings]]
+action = "Copy"
+key = "Copy"
+mods = "None"
+
+[[keyboard.bindings]]
+action = "ClearLogNotice"
+key = "L"
+mods = "Control"
+
+[[keyboard.bindings]]
+chars = "\f"
+key = "L"
+mods = "Control"
+
+[[keyboard.bindings]]
+action = "ScrollPageUp"
+key = "PageUp"
+mode = "~Alt"
+mods = "None"
+
+[[keyboard.bindings]]
+action = "ScrollPageDown"
+key = "PageDown"
+mode = "~Alt"
+mods = "None"
+
+[[keyboard.bindings]]
+action = "ScrollToTop"
+key = "Home"
+mode = "~Alt"
+mods = "Shift"
+
+[[keyboard.bindings]]
+action = "ScrollToBottom"
+key = "End"
+mode = "~Alt"
+mods = "Shift"
+
+[scrolling]
+history = 15000
+
+[window]
+dynamic_padding = false
+opacity = 0.7
+title = "Alacritty"
+
+[window.class]
+general = "Alacritty"
+instance = "Alacritty"
+
+[window.padding]
