@@ -2,24 +2,23 @@
 draw_bold_text_with_bright_colors = true
 
 [colors.bright]
-black = "#4d5d57"   # foggy forest bark
-red = "#ff7e3b"     # flame orange
-green = "#7bdcb5"   # bright seafoam highlight
-yellow = "#fcd16b"  # intense fire glow
-blue = "#8ad4e4"    # bright underwater light shafts
-magenta = "#b394b9" # mystical depth accent
-cyan = "#9df2ea"    # glowing cyan shimmer
-white = "#f0f9f7"   # pale ocean mist
-
+black = "#4d5d57"
+red = "#ff7e3b"
+green = "#7bdcb5"
+yellow = "#fcd16b"
+blue = "#8ad4e4"
+magenta = "#b394b9"
+cyan = "#9df2ea"
+white = "#f0f9f7"
 [colors.normal]
-black = "#1f2e29"   # ocean floor depth
-red = "#d0502a"     # ember red
-green = "#4e8e78"   # murky kelp
-yellow = "#d1ae5b"  # fire shadows
-blue = "#396b78"    # deep sea teal
-magenta = "#645a72" # somber shadows
-cyan = "#54a6a1"    # neutral aqua
-white = "#c9d7d3"   # softened light
+black = "#1f2e29"
+red = "#d0502a"
+green = "#4e8e78"
+yellow = "#d1ae5b"
+blue = "#396b78"
+magenta = "#645a72"
+cyan = "#54a6a1"
+white = "#c9d7d3"
 
 [colors.primary]
 background = "#172624" # very deep ocean green
@@ -147,8 +146,8 @@ history = 15000
 
 [window]
 dynamic_padding = false
-opacity = 0.7
-title = "Alacritty"
+opacity = 10000
+title = "tty0"
 
 [window.class]
 general = "Alacritty"

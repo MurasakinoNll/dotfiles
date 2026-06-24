@@ -29,7 +29,7 @@ theme.tasklist_bg_focus = "#35346000" --#35346000
 theme.tasklist_fg_focus = "#00CCFF"
 theme.border_width = dpi(0.9)
 theme.border_normal = "#0f301e" --3F3F3F
-theme.border_focus = "#23c2aa" --6F6F6F
+theme.border_focus = "#90efcc" --6F6F6F
 theme.border_marked = "#CC9393"
 theme.titlebar_bg_focus = "#3F3F3F"
 theme.titlebar_bg_normal = "#3F3F3F"
@@ -102,23 +102,23 @@ local markup = lain.util.markup
 local separators = lain.util.separators
 
 -- Binary clock
-local binclock = require("themes.ds.binclock")({
-	height = dpi(32),
-	show_seconds = true,
-	color_active = theme.fg_normal,
-	color_inactive = theme.bg_focus,
-})
-
+-- local binclock = require("themes.ds.binclock")({
+--   height = dpi(25),
+--   show_seconds = true,
+--   color_active = theme.fg_normal,
+--   color_inactive = theme.bg_focus,
+-- })
+--
 -- Calendar
-theme.cal = lain.widget.cal({
-	--cal = "cal --color=always",
-	attach_to = { binclock.widget },
-	notification_preset = {
-		font = "Terminus 10",
-		fg = theme.fg_normal,
-		bg = theme.bg_normal,
-	},
-})
+-- theme.cal = lain.widget.cal({
+-- 	--cal = "cal --color=always",
+-- 	attach_to = { binclock.widget },
+-- 	notification_preset = {
+-- 		font = "Terminus 10",
+-- 		fg = theme.fg_normal,
+-- 		bg = theme.bg_normal,
+-- 	},
+-- })
 
 -- Taskwarrior
 local task = wibox.widget.imagebox(theme.widget_task)
@@ -392,11 +392,11 @@ function theme.at_screen_connect(s)
 	-- Create the wibox
 	s.mywibox = awful.wibar({
 		position = "top",
-		border_color = "#27",
+		border_color = "#278291",
 		screen = s,
-		height = dpi(23),
-		border_width = "2",
-		--shape = gears.shape.rounded_rect(cr, 1200, 50, 10),
+		height = dpi(18),
+		border_width = "0",
+		--shape = gears.shape.rounded_rect(1200, 50, 10),
 		--[[bg = theme.bg_normal, fg = theme.fg_normal--]]
 	})
 
@@ -488,7 +488,7 @@ function theme.at_screen_connect(s)
 
 			--arrow("#396b78", "#27444a"),
 
-			wibox.container.background(wibox.container.margin(binclock.widget, dpi(4), dpi(8)), "#27444a"),
+			-- wibox.container.background(wibox.container.margin(binclock.widget, dpi(4), dpi(8)), "#27444a"),
 
 			--arrow("#27444a", "alpha"),
 

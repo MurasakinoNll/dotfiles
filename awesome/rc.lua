@@ -92,6 +92,7 @@ awful.spawn.with_shell(
 local themes = {
 	"haraksbase",
 	"ds",
+	"night",
 	"redscale",
 }
 
@@ -103,6 +104,10 @@ if chosen_theme == themes[1] then
 	terminal = "alacritty --config-file /home/haraku/.config/alacritty/alacritty1.toml"
 elseif chosen_theme == themes[2] then
 	terminal = "alacritty --config-file /home/haraku/.config/alacritty/alacritty2.toml"
+elseif chosen_theme == themes[3] then
+	terminal = "alacrity --config-file /home/haraku/.config/alacritty/tokyo.toml"
+else
+	terminal = "alacritty --config-file /home/haraku/.config/alacritty/nordic.toml"
 end
 local vi_focus = false -- vi-like client focus https://github.com/lcpz/awesome-copycats/issues/275
 local cycle_prev = true -- cycle with only the previously focused client or all https://github.com/lcpz/awesome-copycats/issues/274
@@ -110,7 +115,7 @@ local editor = os.getenv("EDITOR") or "nvim"
 local browser = "firefox"
 
 awful.util.terminal = terminal
-awful.util.tagnames = { "1", "2", "3", "4", "5", "6", "7", "8" }
+awful.util.tagnames = { "1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "auxiliary" }
 awful.layout.layouts = {
 	awful.layout.suit.tile,
 	awful.layout.suit.floating,
@@ -886,7 +891,7 @@ tag.connect_signal("property::selected", backham)
 end
 --]]
 awful.spawn.with_shell(
-	"prime-run picom -bc -o 0.38 -O 200 -I 200 -t 0 -l 0 -r 3 -D2 -m 0.88 --config /dev/null --backend xrender &"
+	"prime-run picom --active-opacity 0.97 -i 0.85 -D 1 -I 1 -O 1 --blur-background-fixed --vsync --xrender-sync-fence"
 )
 awful.spawn.with_shell("pa-applet")
 awful.spawn.with_shell("flameshot")

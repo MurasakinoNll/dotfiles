@@ -1,7 +1,12 @@
-configuration {
- modi: "window,drun,ssh,combi";
- font: "hack 10";
- combi-modi: "window,drun,ssh";
- }
-@theme "~/.config/rofi/themes/dt-center.rasi"
+/** Basic config file **/
 
+configuration {
+  show-icons: true;
+  icon-theme: "Papirus";
+  display-drun: "  ";
+  display-window: "﩯 ";
+  display-combi: "  ";
+}
+//@theme "themes/sidetab-nord.rasi"
+
+@theme "/home/haraku/.config/rofi/themes/nord.rasi"
