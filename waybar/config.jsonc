@@ -197,11 +197,9 @@
     "format-alt": "{ifname}: {ipaddr}/{cidr}"
   },
   "custom/fan": {
-    "exec": "sudo /home/haraku/harakdev/fancontrol_c/bins/ec-fan",
-    "return-type": "json",
-    "interval": 1,
-    "tooltip": true,
-    "format": "{text}"
+    "format": "󰈐",
+    "tooltip": false,
+    "on-click": "/usr/bin/ec-gtk"
   },
   "pulseaudio": {
     // "scroll-step": 1, // %, can be a float

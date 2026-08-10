@@ -41,7 +41,7 @@ window#waybar.chromium {
 }
 #custom-fan {
     font-family: "JetBrainsMono Nerd Font", monospace;
-    padding: 0 8px;
+    padding: 0 10px;
 }
 
 button {
